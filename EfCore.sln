@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeFirst", "CodeFirst\Code
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCoreDataAnnotattions", "EfCoreDataAnnotattions\EfCoreDataAnnotattions.csproj", "{F7BADCDE-4969-4360-8393-4A424B93C8C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreDataAnotationTekrar", "EfCoreDataAnotationTekrar\EfCoreDataAnotationTekrar.csproj", "{EC460032-7786-47C3-B6E6-6D4D9129E99C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCoreDataAnotationTekrar", "EfCoreDataAnotationTekrar\EfCoreDataAnotationTekrar.csproj", "{EC460032-7786-47C3-B6E6-6D4D9129E99C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreFluentApi", "EfCoreFluentApi\EfCoreFluentApi.csproj", "{F2066279-DB01-400F-89BB-E4B155BE78F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCoreFluentApi", "EfCoreFluentApi\EfCoreFluentApi.csproj", "{F2066279-DB01-400F-89BB-E4B155BE78F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreFluentApi2", "EfCoreFluentApi2\EfCoreFluentApi2.csproj", "{09317906-B76D-41E1-B9E2-05E1F50B4C5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCoreFluentApi2", "EfCoreFluentApi2\EfCoreFluentApi2.csproj", "{09317906-B76D-41E1-B9E2-05E1F50B4C5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreMigrationandConfiguration", "EfCoreMigrationandConfiguration\EfCoreMigrationandConfiguration.csproj", "{ED84B453-3E02-407E-9267-CA9510733F22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCoreMigrationandConfiguration", "EfCoreMigrationandConfiguration\EfCoreMigrationandConfiguration.csproj", "{ED84B453-3E02-407E-9267-CA9510733F22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreRelation", "EfCoreRelation\EfCoreRelation.csproj", "{8D38FA29-147F-480E-8CA8-3CE6114F1276}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{ED84B453-3E02-407E-9267-CA9510733F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED84B453-3E02-407E-9267-CA9510733F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED84B453-3E02-407E-9267-CA9510733F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D38FA29-147F-480E-8CA8-3CE6114F1276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D38FA29-147F-480E-8CA8-3CE6114F1276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D38FA29-147F-480E-8CA8-3CE6114F1276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D38FA29-147F-480E-8CA8-3CE6114F1276}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
