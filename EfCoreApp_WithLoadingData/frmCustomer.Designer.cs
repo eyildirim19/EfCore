@@ -35,8 +35,12 @@
             this.lblStok = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgwOrderDetails = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwOrders)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwOrderDetails)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -57,11 +61,12 @@
             this.dgwOrders.RowTemplate.Height = 25;
             this.dgwOrders.Size = new System.Drawing.Size(721, 176);
             this.dgwOrders.TabIndex = 0;
+            this.dgwOrders.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwOrders_CellClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 320);
+            this.label1.Location = new System.Drawing.Point(12, 262);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(433, 15);
             this.label1.TabIndex = 3;
@@ -105,11 +110,31 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "GridRowSelect veya GridCellClick ile satırı yakaylıp ilgili Id\'yi alabilirsiniz";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgwOrderDetails);
+            this.groupBox2.Location = new System.Drawing.Point(19, 282);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(673, 105);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Sipariş Detayı";
+            // 
+            // dgwOrderDetails
+            // 
+            this.dgwOrderDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwOrderDetails.Location = new System.Drawing.Point(10, 20);
+            this.dgwOrderDetails.Name = "dgwOrderDetails";
+            this.dgwOrderDetails.RowTemplate.Height = 25;
+            this.dgwOrderDetails.Size = new System.Drawing.Size(657, 79);
+            this.dgwOrderDetails.TabIndex = 0;
+            // 
             // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(757, 527);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblStok);
@@ -121,6 +146,8 @@
             this.Load += new System.EventHandler(this.frmCustomer_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgwOrders)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgwOrderDetails)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +162,7 @@
         private Label lblStok;
         private Label label4;
         private Label label3;
+        private GroupBox groupBox2;
+        private DataGridView dgwOrderDetails;
     }
 }

@@ -19,8 +19,15 @@ namespace EfCoreApp_WithLoadingData.Models
         }
 
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<OrderDetails>().HasKey(c => new { c.OrderId,c.ProductId });
+            modelBuilder.Entity<OrderDetails>().ToTable("Order Details");
+        }
+
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetails> OrderDetails { get; set; }
     }
 }

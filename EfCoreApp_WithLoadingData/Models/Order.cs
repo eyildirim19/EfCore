@@ -17,7 +17,7 @@ namespace EfCoreApp_WithLoadingData.Models
         public string ShipAddress { get; set; }
 
         public virtual Employee Employee { get; set; }
-
         public Customer Customer { get; set; }
+        public List<OrderDetails> OrderDetails { get; set; }
     }
 }
